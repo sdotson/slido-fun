@@ -23,7 +23,7 @@ Just use the command yo.
 |`-r`|number of up votes|`1`|false|
 
 ##Example
-###Upvote your favorite question 763350 for event 73371 10 number of times
+####Upvote your favorite question 763350 for event 73371 10 number of times
 ```
 slido-fun -e 73371 -q 763350 -r 10
 ```
