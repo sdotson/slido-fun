@@ -1,0 +1,20 @@
+{
+  "name": "slido-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "slido-fun": "bin/slido-fun"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "chalk": "^1.1.3",
+    "co": "^4.6.0",
+    "request": "^2.74.0"
+  }
+}
