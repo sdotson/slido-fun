@@ -12,14 +12,15 @@ const request = require('request'),
   chalk = require('chalk'),
   argv = require('minimist')(process.argv.slice(2)),
   args = {
-    questionId: argv.q || '763350',
-    eventId: argv.e || '73371',
+    questionId: argv.q,
+    eventId: argv.e,
     reps: argv.r || 1
   };
 
 if (!args.questionId || !args.eventId) {
   console.log(chalk.red('You must specify a question ID and an event ID'));
 } else {
+  console.log(chalk.cyan('Time for some fun!'));
   co(function*() {
 
     for (let i = 0; i < args.reps; i++) {
@@ -42,9 +43,8 @@ if (!args.questionId || !args.eventId) {
             "score":1
           }
         });
-
-      console.log(likeResponse.body);
+      console.log(chalk.gray(JSON.stringify(likeResponse.body)));
     }
-    console.log(chalk.cyan(`You've just up-voted question ${args.questionId} ${args.reps} times.`));
+    console.log(chalk.green(`You've just up-voted question ${args.questionId} ${args.reps} times.`));
   });
 }
