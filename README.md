@@ -10,9 +10,20 @@ npm install
 npm link
 ```
 
-##Use
+##Instructions
+You'll need two things to make this work: event id and question id. You can figure these out by visiting the slido event and looking at the XHR requests.
 
-Just use the command yo.
+###Event ID
+The event id can be found in numerous endpoints. For example, in the following the event ID would be `73777`:
+```
+https://app.sli.do/v0.4/events/73777/user
+https://app.sli.do/v0.4/events/73777/user/activity
+https://app.sli.do/v0.4/events/73777
+https://app.sli.do/v0.4/events/73777/questions
+```
+
+###Question ID
+The question ID can be found by digging through the JSON response of `https://app.sli.do/v0.4/events/73777/questions` or possibly a little more easily, liking a specific question and getting the ID from the endpoint. For example, in `https://app.sli.do/v0.4/events/73777/questions/768036/like` the ID would be `768036`.
 
 ###Arguments
 #### Options
@@ -23,7 +34,7 @@ Just use the command yo.
 |`-r`|number of up votes|`1`|false|
 
 ##Example
-####Upvote your favorite question 763350 for event 73371 10 number of times
+####Upvote your favorite question 763350 for event 73371 10 times
 ```
 slido-fun -e 73371 -q 763350 -r 10
 ```

@@ -1,7 +1,7 @@
 'use strict';
 
 /*
-npm version of the following curl command:
+node version of the following curl command:
 token=`curl -s curl -H "Content-Type: application/json;charset=UTF-8" -X POST https://app.sli.do/v0.4/events/73371/auth | jq -r '.access_token'` && curl -H "Authorization: Bearer $token" -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{"score":1}' https://app.sli.do/v0.4/events/73371/questions/763350/like
 */
 
