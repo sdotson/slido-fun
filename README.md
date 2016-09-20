@@ -11,7 +11,7 @@ npm link
 ```
 
 ##Instructions
-You'll need two things to make this work: event id and question id. You can figure these out by visiting the slido event and looking at the XHR requests.
+You'll need two things to make this work: event id and question id. You can figure these out by visiting the sli.do event and looking at the XHR requests.
 
 ###Event ID
 The event id can be found in numerous endpoints. For example, in the following the event ID would be `73777`:
