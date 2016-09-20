@@ -45,6 +45,6 @@ if (!args.questionId || !args.eventId) {
         });
       console.log(chalk.gray(JSON.stringify(likeResponse.body)));
     }
-    console.log(chalk.green(`You've just up-voted question ${args.questionId} ${args.reps} times.`));
+    console.log(chalk.green(`You've just upvoted question ${args.questionId} ${args.reps} times.`));
   });
 }
