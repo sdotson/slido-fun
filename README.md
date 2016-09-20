@@ -1,6 +1,6 @@
 #slido-fun
 
-The purpose of this CLI is to make sli.do question time more fun for all involved and spread happiness and joy across large meetings everywhere. Upvote your favorite sli.do question an absurd number of times with this sli.do fun enhancement tool.
+The purpose of this CLI is to make sli.do question time more fun and interesting for all involved. Upvote your favorite sli.do question an absurd number of times with this sli.do fun enhancement tool.
 
 ##Installation
 
