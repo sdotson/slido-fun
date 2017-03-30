@@ -1,7 +1,7 @@
 {
   "name": "slido-fun",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI to spread happiness and joy during sli.do meeting time",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "bin": {
     "slido-fun": "bin/slido-fun"
   },
-  "author": "",
+  "author": "Stuart Dotson",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.1",
